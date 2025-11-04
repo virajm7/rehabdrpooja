@@ -15,10 +15,11 @@ export default function Home() {
     <Ad slideHeightVh={90} autoplay={true} autoplayInterval={5000} />
     {/* other page content */}
     <Meet/>
-    <Chatbot />
     <About/>
     <Rev/>
     <Foot/>
+    <Chatbot />
+
     {/* <Space/> */}
 
   </div>
