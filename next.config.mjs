@@ -1,12 +1,11 @@
-// next.config.mjs
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // ✅ static export mode
+  output: 'export',        // enables static export
   images: {
-    unoptimized: true, // ✅ required for GitHub Pages (no Image Optimization)
+    unoptimized: true,     // needed for GitHub Pages
   },
-  trailingSlash: true, // ✅ helps with routing on static hosting
+  trailingSlash: true,     // ensures all URLs end with /
+  distDir: 'out',          // ensures /out folder gets created
 };
 
 export default nextConfig;
